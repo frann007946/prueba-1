@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Argentina Tourism</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    .container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 0 auto;
+      max-width: 800px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .location {
+      background-color: #f9f9f9;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    .location h2 {
+      color: #4CAF50;
+      margin-bottom: 10px;
+    }
+    .location img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .location p {
+      line-height: 1.6;
+    }
+    .more-info {
+      display: none;
+      padding: 10px;
+      background-color: #e0e0e0;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    .more-info ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+    .more-info a {
+      color: blue;
+      text-decoration: none;
+    }
+    .more-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Discover Argentina</h1>
+    <p>Argentina is a country of stunning natural beauty, vibrant culture, and delicious cuisine. From the bustling capital of Buenos Aires to the majestic Andes Mountains and the cascading Iguazu Falls, there's something for everyone in Argentina.</p>
+    <div class="location">
+      <h2>Buenos Aires</h2>
+      <img src="https://via.placeholder.com/300x200?text=Buenos+Aires" alt="Buenos Aires">
+      <p>Buenos Aires is a captivating city known for its vibrant tango culture, elegant architecture, and delicious cuisine. Explore the historic neighborhoods, visit world-class museums, and enjoy the city's nightlife.</p>
+      <button onclick="toggleInfo('buenosAires')">More Info</button>
+      <div id="buenosAires" class="more-info">
+        <ul>
+          <li>Plaza de Mayo</li>
+          <li>Recoleta Cemetery</li>
+          <li>MALBA (Latin American Art Museum)</li>
+        </ul>
+        <p>The best time to visit Buenos Aires is during the spring (September-November) or autumn (March-May) for pleasant weather.</p>
+        <a href="https://www.buenosaires.gob.ar/turismo" target="_blank">Visit Buenos Aires Tourism Website</a>
+      </div>
+    </div>
+    <div class="location">
+      <h2>Iguazu Falls</h2>
+      <img src="https://via.placeholder.com/300x200?text=Iguazu+Falls" alt="Iguazu Falls">
+      <p>Experience the breathtaking Iguazu Falls, a UNESCO World Heritage Site. Witness the cascading water rushing over the precipice, creating a mesmerizing spectacle. Hike the trails, take a boat ride, or enjoy a helicopter tour for different perspectives.</p>
+      <button onclick="toggleInfo('iguazu')">More Info</button>
+      <div id="iguazu" class="more-info">
+        <ul>
+          <li>Garganta del Diablo (Devil's Throat)</li>
+          <li>Upper and Lower Circuits</li>
+          <li>Boat Tours</li>
+        </ul>
+        <p>The best time to visit Iguazu Falls is during the dry season (May-September) for clearer views and less rain.</p>
+        <a href="https://www.iguazuargentina.com/" target="_blank">Visit Iguazu Falls Tourism Website</a>
+      </div>
+    </div>
+    <div class="location">
+      <h2>Bariloche</h2>
+      <img src="https://via.placeholder.com/300x200?text=Bariloche" alt="Bariloche">
+      <p>Nestled in the heart of the Andes Mountains, Bariloche is a charming city known for its breathtaking scenery, skiing opportunities, and delicious chocolate. Hike the trails, ski the slopes, or simply enjoy the panoramic views.</p>
+      <button onclick="toggleInfo('bariloche')">More Info</button>
+      <div id="bariloche" class="more-info">
+        <ul>
+          <li>Cerro Catedral (Ski Resort)</li>
+          <li>Nahuel Huapi National Park</li>
+          <li>Chocolate Factories</li>
+        </ul>
+        <p>The best time to visit Bariloche is during the winter (June-August) for skiing and snowboarding, or during the summer (December-February) for hiking and outdoor activities.</p>
+        <a href="https://www.bariloche.gov.ar/turismo" target="_blank">Visit Bariloche Tourism Website</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    function toggleInfo(id) {
+      var info = document.getElementById(id);
+      info.style.display = info.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
